@@ -1,0 +1,678 @@
+/* Mengatur margin default dan font */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins dari Google Fonts */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #3A4A3C; /* Warna hijau pastel untuk latar belakang navigasi */
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    max-width: 80px;  /* Ukuran logo yang lebih kecil */
+    height: auto;
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;  /* Warna teks menu */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Pastikan font Poppins digunakan di navbar */
+}
+
+.navbar ul li a:hover {
+    color: #FFD700;  /* Warna gold ketika hover */
+}
+
+/* Slideshow */
+.slideshow-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-container img.active {
+    opacity: 1;
+}
+
+/* Floating Text */
+.floating-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif; /* Pastikan font Poppins digunakan di floating text */
+}
+
+/* Layanan & Informasi Section */
+section.services-info {
+    padding: 40px;
+    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+section.services-info h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Pastikan font Poppins digunakan di h2 */
+}
+
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Pastikan font Poppins digunakan di setiap box */
+}
+
+.service-box:hover {
+    transform: scale(1.05); /* Menambah efek zoom-in pada hover */
+}
+
+.service-icon {
+    font-size: 40px; /* Ukuran ikon lebih besar */
+    margin-bottom: 15px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+/* Efek hover pada ikon */
+.service-icon:hover {
+    transform: scale(1.2);
+}
+
+.service-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Styling */
+.footer-container {
+    display: flex;
+    justify-content: space-between;  /* Memisahkan 3 bagian: Pemerintah Desa, Kontak Kami, Ikuti Kami */
+    padding: 30px 20px;  /* Menambahkan padding agar lebih rapi */
+    background-color: #3A4A3C; /* Warna latar belakang footer */
+    color: white;
+    text-align: left;  /* Agar teks rata kiri */
+    flex-wrap: wrap;  /* Agar elemen responsif pada layar kecil */
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins di seluruh footer */
+}
+
+/* Bagian Pemerintah Desa Jagara */
+.footer-info {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 33%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.footer-info h3 {
+    font-size: 18px;  /* Ukuran font sedikit lebih kecil */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #A8D5BA;
+}
+
+.footer-info p {
+    font-size: 14px;  /* Ukuran font lebih kecil untuk paragraf */
+    color: #fff;
+}
+
+/* Bagian Kontak Kami */
+.footer-contact {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 33%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.footer-contact h3 {
+    font-size: 18px;  /* Ukuran font sedikit lebih kecil */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #A8D5BA;
+}
+
+.footer-contact p {
+    font-size: 14px;  /* Ukuran font lebih kecil untuk paragraf */
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #A8D5BA;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Bagian Ikuti Kami */
+.footer-social {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 33%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.footer-social h3 {
+    font-size: 18px;  /* Ukuran font sedikit lebih kecil */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #A8D5BA;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;  /* Membuat ikon sosial media rata kiri */
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px; /* Ukuran ikon sosial media sedikit lebih kecil */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Menambahkan garis horizontal lebih jelas */
+hr {
+    border: 1;
+    border-top: 1px solid #fff;
+    margin: 2px 0; /* Mengurangi jarak garis horizontal agar tidak terlalu lebar */
+}
+
+/* Copyright */
+.footer-copy {
+    text-align: center;
+    margin-top: 10px;  /* Mengurangi margin atas untuk jarak yang lebih rapi */
+    font-size: 14px;
+    color: #A8D5BA; /* Mengubah warna font menjadi hijau terang agar kontras dengan latar belakang footer */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Menambahkan batas yang lebih rapi antara footer dan copyright */
+footer {
+    border-top: 1px solid #fff;  /* Membuat batas putih antara footer dan konten lain */
+    padding-top: 20px;
+}
+
+/* Ikon Kontak Kami */
+.footer-contact p i {
+    margin-right: 10px;
+    font-size: 16px; /* Ukuran ikon sedikit lebih kecil */
+    color: #A8D5BA;
+}
+
+
+/* BATAS PROFIL */
+/* Bagian Profil Header */
+.profil-section {
+    padding: 60px 30px;
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins untuk seluruh bagian profil */
+}
+
+.profil-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profil-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2e473b; /* Hijau gelap */
+}
+
+.profil-header p {
+    font-size: 20px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Profil desa */
+/* Profil Desa */
+/* Menambahkan background untuk visi dan misi */
+.visi-misi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins untuk seluruh bagian ini */
+}
+
+.visi-misi h2 {
+    text-align: center;
+    font-size: 28px; /* Menurunkan ukuran font untuk judul */
+    color: #333;
+    margin-bottom: 20px; /* Menurunkan margin bawah agar lebih rapat */
+}
+
+/* Judul Visi dan Misi */
+.visi h3,
+.misi h3 {
+    font-size: 20px;  /* Ukuran font sedikit lebih kecil */
+    font-weight: 600;
+    color: white;
+    background-color: #2e473b; /* Background hijau gelap untuk visibilitas */
+    padding: 8px 15px; /* Menurunkan padding */
+    margin-bottom: 8px; /* Mengurangi margin bawah */
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Menambahkan background untuk visi blockquote */
+.visi blockquote {
+    font-style: italic;
+    font-size: 16px; /* Menurunkan ukuran font */
+    color: #444;
+    border-left: 5px solid #b2d8b2;
+    padding-left: 18px;
+    margin: 0 auto 20px; /* Menurunkan margin bawah agar lebih rapat */
+    max-width: 600px;
+    background-color: #f0f8f0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Menambahkan efek pada misi list */
+.misi ol {
+    padding-left: 20px;
+    font-size: 16px;  /* Menurunkan ukuran font */
+    color: #333;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none; /* Menghapus default bullet */
+    counter-reset: list-counter; /* Reset counter untuk mulai dari 1 */
+}
+
+/* Menambahkan nomor bulat dengan ukuran lebih kecil dan geser ke kiri */
+.misi ol li {
+    position: relative;
+    padding-left: 40px; /* Memberikan ruang untuk nomor */
+    margin-bottom: 15px; /* Mengurangi jarak antar item */
+    font-size: 16px; /* Ukuran font lebih kecil untuk misi */
+}
+
+/* Menyesuaikan nomor dengan ukuran yang lebih kecil */
+.misi ol li::before {
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    position: absolute;
+    left: 0; /* Geser nomor ke kiri */
+    top: 0;
+    font-size: 16px;  /* Ukuran font lebih kecil */
+    font-weight: bold;
+    color: #fff;
+    background-color: #3A4A3C;
+    border-radius: 50%;
+    width: 24px; /* Ukuran lingkaran lebih kecil */
+    height: 24px; /* Ukuran lingkaran lebih kecil */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.misi ol li::before {
+    background-color: #3A4A3C; /* Warna nomor tetap */
+}
+
+.misi ol li:hover::before {
+    background-color: #FFD700; /* Warna gold saat hover */
+}
+
+/* Data Demografi */
+.data-demografi {
+    margin-top: 40px;
+    padding-bottom: 40px;  /* Add some space between data boxes and footer */
+}
+
+.data-demografi h2 {
+    font-size: 28px;
+    color: #3A4A3C;
+    text-align: center; /* Center the title */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Pastikan font Poppins digunakan di judul data demografi */
+}
+
+.data-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 0 auto;  /* Center the grid */
+    max-width: 1200px; /* Set max-width to prevent stretching */
+}
+
+.data-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins pada data box */
+}
+
+.data-box:hover {
+    transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+.data-box i {
+    font-size: 50px;
+    color: #3A4A3C;
+    margin-bottom: 8px;  /* Reduce space between icon and number */
+}
+
+.data-box p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;  /* Add some space between number and label */
+}
+
+.data-box h4 {
+    font-size: 18px;
+    color: #555;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins pada h4 */
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .data-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .data-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* BATAS PERJALANAN */
+/* Timeline Section */
+.timeline-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.timeline-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2e3d2f;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.timeline-section .subheading {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Main Timeline */
+.timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Vertical Center Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #627c65;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+/* Bullet */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 4px solid #627c65;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Left Items */
+.timeline-item.left {
+    left: 0;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.timeline-item.left::before {
+    left: 100%;
+}
+
+/* Right Items */
+.timeline-item.right {
+    left: 50%;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.timeline-item.right::before {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+/* Box */
+.timeline-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Text in Box */
+.timeline-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.timeline-item p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 10px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item::before {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        text-align: left;
+        padding: 0 0 0 40px;
+    }
+}
+
+/* BATAS POTENSI DESA */
+/* Potensi Wisata */
+.tourism-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.tourism-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tourism-section .subheading {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.tourism-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.tourism-item {
+    background-color: #fff;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tourism-item:hover {
+    transform: scale(1.05);
+}
+
+.tourism-item a {
+    display: block;
+    overflow: hidden;
+}
+
+.tourism-item img {
+    width: 100%;
+    height: 250px;  /* Atur tinggi gambar agar seragam */
+    object-fit: cover; /* Memastikan gambar tetap terpotong dengan proporsional */
+    border-bottom: 3px solid #ddd;
+}
+
+.tourism-info {
+    padding: 20px;
+}
+
+.tourism-info h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tourism-info p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}

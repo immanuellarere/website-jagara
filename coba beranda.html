@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Jagara</title>
+    <!-- Link ke FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Link ke Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS Anda -->
+</head>
+
+<body>
+    <!-- Header dengan Logo dan Navigasi -->
+    <header>
+        <div class="logo-container">
+            <img src="Image/logo desa jagara.jpg" alt="Desa Jagara Logo" class="logo"> <!-- Ganti dengan logo Anda -->
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="perjalanan.html">Perjalanan</a></li>
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="potensi.html">Potensi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow Fullscreen -->
+    <div class="slideshow-container">
+        <img src="Image/jagara.webp" alt="Slide 1" class="active">
+        <img src="Image/jagara1.jpg" alt="Slide 2">
+        <img src="Image/jagara2.jpeg" alt="Slide 3">
+    </div>
+
+    <!-- Floating Text -->
+    <div class="floating-text">
+        <h1>Selamat Datang di Desa Jagara</h1>
+        <p>Desa Penuh Sejarah dan Potensi di Kuningan</p>
+    </div>
+
+    <section class="services-info">
+        <h2>Layanan & Informasi</h2>
+        <div class="service-boxes">
+            <div class="service-box">
+                <!-- Ikon Layanan Kependudukan -->
+                <span class="material-icons service-icon">group</span>
+                <h3>Layanan Kependudukan</h3>
+                <p>Informasi dan prosedur pengurusan dokumen kependudukan.</p>
+            </div>
+            <div class="service-box">
+                <!-- Ikon Potensi Desa -->
+                <span class="material-icons service-icon">location_city</span>
+                <h3>Potensi Desa</h3>
+                <p>Jelajahi keindahan alam, budaya, dan pariwisata Desa Kuta.</p>
+            </div>
+            <div class="service-box">
+                <!-- Ikon Agenda Kegiatan -->
+                <span class="material-icons service-icon">event</span>
+                <h3>Agenda Kegiatan</h3>
+                <p>Jadwal acara, upacara adat, dan festival di Desa Kuta.</p>
+            </div>
+            <div class="service-box">
+                <!-- Ikon Pengaduan Masyarakat -->
+                <span class="material-icons service-icon">volume_up</span>
+                <h3>Pengaduan Masyarakat</h3>
+                <p>Saluran untuk menyampaikan aspirasi dan pengaduan Anda.</p>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <div class="footer-container">
+            <!-- Bagian Pemerintah Desa Jagara -->
+            <div class="footer-info">
+                <h3>Pemerintah Desa Jagara</h3>
+                <p>Situs resmi yang menyediakan informasi dan layanan publik bagi masyarakat dan pengunjung Desa Jagara, Darma, Kuningan</p>
+            </div>
+        
+            <!-- Bagian Kontak Kami -->
+            <div class="footer-contact">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Jalan Jagara - Sakerta Timur Kecamatan Darma Kabupaten Kuningan</p>
+                <p><i class="fas fa-phone-alt"></i> <strong>Telepon:</strong> +62 81355479524</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:admin@desakuta.com">admin@desajagara.com</a></p>
+            </div>
+        
+            <!-- Bagian Ikuti Kami -->
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="footer-copy">&copy; 2025 Pemerintah Desa Jagara. Hak Cipta Dilindungi.</p>
+    </footer>            
+
+    <!-- JavaScript untuk Slideshow -->
+    <script>
+        const slides = document.querySelectorAll('.slideshow-container img');
+        let currentSlide = 0;
+
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 3000); // Ganti gambar setiap 3 detik
+    </script>
+</body>
+</html>
