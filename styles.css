@@ -143,6 +143,12 @@ section.services-info h2 {
     color: #555;
 }
 
+.link-box {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 /* Footer Styling */
 .footer-container {
     display: flex;
@@ -675,4 +681,5 @@ footer {
     font-size: 1em;
     color: #555;
     margin-bottom: 20px;
+
 }
