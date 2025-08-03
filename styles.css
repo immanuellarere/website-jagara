@@ -126,6 +126,22 @@ section.services-info h2 {
     transition: transform 0.3s ease;
 }
 
+.container {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+.service-box {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* Efek hover pada ikon */
 .service-icon:hover {
     transform: scale(1.2);
@@ -683,3 +699,4 @@ footer {
     margin-bottom: 20px;
 
 }
+
