@@ -82,76 +82,38 @@ header {
 }
 
 /* Layanan & Informasi Section */
-/* Section Container */
+/* Layanan & Informasi Section */
 section.services-info {
-  padding: 40px;
-  background-color: #f5f5f5;
-  text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    margin-top: 40px;
 }
 
-/* Judul */
 section.services-info h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: #333;
-  font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Pastikan font Poppins digunakan di h2 */
 }
 
-/* Grid Layout */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1100px;
-  margin-inline: auto;
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
 }
 
-/* Link styling */
-.link-box {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Kotak Layanan */
 .service-box {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  font-family: 'Poppins', sans-serif;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 280px;
-}
-
-/* Efek Hover */
-.service-box:hover {
-  transform: translateY(-5px);
-}
-
-/* Icon */
-.service-icon {
-  font-size: 40px;
-  margin-bottom: 15px;
-  color: #000;
-}
-
-/* Judul dan Paragraf */
-.service-box h3 {
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #333;
-}
-
-.service-box p {
-  color: #555;
-  font-size: 15px;
-  line-height: 1.5;
-  flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Pastikan font Poppins digunakan di setiap box */
 }
 
 .service-box:hover {
@@ -164,23 +126,6 @@ section.services-info h2 {
     line-height: 1;
     transition: transform 0.3s ease;
 }
-
-.container {
-  display: flex;
-  gap: 1rem;
-  align-items: stretch;
-}
-.service-box {
-  flex: 1;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 /* Efek hover pada ikon */
 .service-icon:hover {
     transform: scale(1.2);
@@ -738,6 +683,7 @@ footer {
     margin-bottom: 20px;
 
 }
+
 
 
 
