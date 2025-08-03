@@ -48,6 +48,27 @@ header {
     color: #FFD700;  /* Warna gold ketika hover */
 }
 
+/* Slideshow */
+.slideshow-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-container img.active {
+    opacity: 1;
+}
+
 /* Floating Text */
 /* Slideshow */
 .slideshow-container {
@@ -702,6 +723,7 @@ footer {
     margin-bottom: 20px;
 
 }
+
 
 
 
