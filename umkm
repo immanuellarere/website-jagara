@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Jagara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Link ke FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Link ke Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS Anda -->
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="Image/logo desa jagara.jpg" alt="Desa Jagara Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="perjalanan.html">Perjalanan</a></li>
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="kontak.html">Profil</a></li>
+                <li><a href="profil.html" class="active">Profil Desa</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="umkm-section">
+        <h2>UMKM Unggulan Desa Jagara</h2>
+        <p class="subheading">Dukung produk lokal dan pelaku usaha kreatif di Desa Jagara</p>
+      
+        <div class="umkm-grid">
+      
+          <!-- Kopi Arlen -->
+          <div class="umkm-card">
+            <img src="Image/kopi arlen.jpeg" alt="Kopi Arlen">
+            <div class="umkm-content">
+              <h3 class="umkm-title">Kopi Arlen</h3>
+              <p class="umkm-desc">
+                Kopi Arlen adalah UMKM kopi lokal yang telah berdiri sejak 2015. Menyediakan berbagai varian seperti kopi cengkeh, arabika, dan robusta. Selain menjual produk kopi, kedainya juga menjadi tempat nongkrong favorit warga karena suasananya yang nyaman.
+              </p>
+              <a href="https://www.instagram.com/kopiarlennjagara/" target="_blank" class="visit-instagram">
+                <i class="fab fa-instagram"></i> Kunjungi Selengkapnya
+              </a>
+            </div>
+          </div>
+      
+          <!-- Batagor Mekar -->
+          <div class="umkm-card">
+            <img src="Image/batagor.jpeg" alt="Batagor Mekar">
+            <div class="umkm-content">
+              <h3 class="umkm-title">Batagor Mekar</h3>
+              <p class="umkm-desc">
+                Batagor Mekar adalah UMKM produksi makanan dari Desa Jagara yang dikenal dengan batagor gurih dan renyah. Diproduksi secara rutin oleh warga lokal, batagor ini dipasarkan hingga ke Bandung dan sering dijadikan pelengkap seblak, mi pedas, hingga camilan.
+              </p>
+              <a href="https://www.instagram.com/batagorkering_mekar/" target="_blank" class="visit-instagram">
+                <i class="fab fa-instagram"></i> Kunjungi Selengkapnya
+              </a>
+            </div>
+          </div>
+      
+          <!-- UMKM Waduk -->
+          <div class="umkm-card">
+            <img src="Image/umkm waduk.JPG" alt="UMKM Sekitar Waduk">
+            <div class="umkm-content">
+              <h3 class="umkm-title">UMKM Sekitar Waduk</h3>
+              <p class="umkm-desc">
+                UMKM di sekitar Waduk Darma menawarkan beragam minuman segar, camilan lokal, dan kuliner khas Desa Jagara seperti tutut (keong sawah). Lokasinya yang strategis di area wisata menjadikannya favorit para wisatawan, terutama saat akhir pekan.
+              </p>
+              <a href="https://www.instagram.com/desawisata_jagara/" target="_blank" class="visit-instagram">
+                <i class="fab fa-instagram"></i> Kunjungi Selengkapnya
+              </a>
+            </div>
+          </div>
+      
+        </div>
+      </section 
